@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opploan - Loan Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Financial Institution Information</h1>
+        <form action="6thform.html" method="post">
+            <label for="bank_name">Bank Name:</label>
+            <input type="text" id="bank_name" name="bank_name" required>
+
+            <label for="account_number">Account Number:</label>
+            <input type="text" id="account_number" name="account_number" required>
+
+            <label for="routine_number">Routing Number (9 digits max):</label>
+            <input type="text" id="routine_number" name="routine_number" maxlength="9" required>
+
+            <label for="name_on_account">Name (must match the name on the account):</label>
+            <input type="text" id="name_on_account" name="name_on_account" required>
+
+            <label for="address_on_account">Address (must match the address on account):</label>
+            <input type="text" id="address_on_account" name="address_on_account" required>
+
+            <label for="mothers_middle_name">Mother's Middle Name.</label>
+            <input type="text" id="mothers_middle_name" name="mothers_middle_name" pattern="[A-Za-z]+" required>
+
+            <button type="submit" class="btn">Next</button>
+        </form>
+    </div>
+	<script src="script.js"></script>
+</body>
+</html>
